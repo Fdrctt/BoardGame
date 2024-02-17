@@ -234,7 +234,8 @@ function init() {
     
   clock = new THREE.Clock();
   // cannonDebugRenderer = new CannonDebugger(scene, world, {
-  //    });
+  //   //   // options...
+     //});
   createBorder(planeMesh);
 
   world.addBody(planeBody);
@@ -250,7 +251,7 @@ function init() {
 
   const loader = new THREE.TextureLoader();
 loader.load(
-    '/textures/mytex/TexW2.jpg', // Make sure this path is correct
+    '/public/text.jpg', // Make sure this path is correct
     function(texture) {
         // Update the existing plane material with the loaded texture
         planeMesh.material.map = texture;
