@@ -233,8 +233,8 @@ function init() {
    planeBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2);
     
   clock = new THREE.Clock();
-  cannonDebugRenderer = new CannonDebugger(scene, world, {
-     });
+  // cannonDebugRenderer = new CannonDebugger(scene, world, {
+  //    });
   createBorder(planeMesh);
 
   world.addBody(planeBody);
@@ -451,7 +451,7 @@ function animate() {
 
   //update stats
   stats.update();
- cannonDebugRenderer.update();//comment this out normally
+ //cannonDebugRenderer.update();//comment this out normally
 }
 
 //initialize then call animation loop
